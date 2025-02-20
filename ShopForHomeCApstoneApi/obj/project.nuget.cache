@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SuFZdemgDKY=",
+  "dgSpecHash": "W+dQLbXq0pU=",
   "success": true,
-  "projectFilePath": "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
+  "projectFilePath": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nikhil\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Nikhil\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
