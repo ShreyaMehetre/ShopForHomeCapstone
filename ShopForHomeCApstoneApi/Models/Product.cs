@@ -1,24 +1,32 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ShopForHomeCApstoneApi.Models;
 
 public partial class Product
 {
+    
+    [Key]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int ProductId { get; set; }
 
-    public string Name { get; set; } = null!;
+    [Required]
+    public string ProductName { get; set; } = null!;
 
+    [Required]
     public string Description { get; set; } = null!;
-
+    [Required]
     public decimal Price { get; set; }
-
+    [Required]
     public double? Rating { get; set; }
-
-    public int Stock { get; set; }
-
+    [Required]
+    public int StockQuantity { get; set; }
+    [Required]
+    [ForeignKey("CategoryId")]
     public int CategoryId { get; set; }
-
+    [Required]
     public string ImageUrl { get; set; } = null!;
 
     public DateTime? CreatedAt { get; set; }
@@ -27,9 +35,5 @@ public partial class Product
 
     public virtual Category Category { get; set; } = null!;
 
-    public virtual ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
-
-    public virtual ICollection<StockAlert> StockAlerts { get; set; } = new List<StockAlert>();
-
-    public virtual ICollection<Wishlist> Wishlists { get; set; } = new List<Wishlist>();
+    public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 }
