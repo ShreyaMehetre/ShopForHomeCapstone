@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using ShopForHomeCApstoneApi.Models;
+
 namespace ShopForHomeCApstoneApi
 {
     public class Program
@@ -5,6 +8,9 @@ namespace ShopForHomeCApstoneApi
         public static void Main(string[] args)
         {
             var builder = WebApplication.CreateBuilder(args);
+            builder.Services.AddDbContext<ShopForHomeDbContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MyDBConnection")));
+
 
             // Add services to the container.
 
