@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj": {}
+    "D:\\Capstone Project\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj": {}
   },
   "projects": {
-    "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj": {
+    "D:\\Capstone Project\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
+        "projectUniqueName": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
         "projectName": "ShopForHomeCApstoneApi",
-        "projectPath": "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
+        "projectPath": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\ShopForHomeCApstoneApi.csproj",
         "packagesPath": "C:\\Users\\Nikhil\\.nuget\\packages\\",
-        "outputPath": "D:\\Wipro\\aaaa\\ShopForHomeCApstoneApi\\obj\\",
+        "outputPath": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

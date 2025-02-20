@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopForHomeCApstoneApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+30aa02c701b034bc7f55a293ecfca7045f3184c7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ebf31950626bb261f416d0fcaa7df8f3545cab27")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopForHomeCApstoneApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopForHomeCApstoneApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
