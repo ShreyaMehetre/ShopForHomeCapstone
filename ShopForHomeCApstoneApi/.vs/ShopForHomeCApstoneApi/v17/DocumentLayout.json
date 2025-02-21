@@ -11,6 +11,26 @@
       "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\discountcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\discountcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\data\\shopforhomedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:data\\shopforhomedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
@@ -19,32 +39,12 @@
       "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:migrations\\20250220184320_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\data\\shopforhomedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:data\\shopforhomedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\discountcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|solutionrelative:models\\discountcoupon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EE6B6E2E-CEFF-4B6C-834B-8086E6FEA04C}|ShopForHomeCApstoneApi.csproj|d:\\capstone project\\shopforhomecapstoneapi\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -92,35 +92,9 @@
               "RelativeDocumentMoniker": "Controllers\\ProductsController.cs",
               "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Controllers\\ProductsController.cs",
               "RelativeToolTip": "Controllers\\ProductsController.cs",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAIwHsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAANkAAAAAAAAAAAAmwPEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T18:45:46.452Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "20250220184320_InitialMigration.cs",
-              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Migrations\\20250220184320_InitialMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250220184320_InitialMigration.cs",
-              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Migrations\\20250220184320_InitialMigration.cs",
-              "RelativeToolTip": "Migrations\\20250220184320_InitialMigration.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:43:20.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "SalesReport.cs",
-              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\SalesReport.cs",
-              "RelativeDocumentMoniker": "Models\\SalesReport.cs",
-              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\SalesReport.cs",
-              "RelativeToolTip": "Models\\SalesReport.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:48:15.197Z",
               "EditorCaption": ""
             },
             {
@@ -133,8 +107,7 @@
               "RelativeToolTip": "Models\\OrderItem.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAADwvx8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:44:49.538Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:44:49.538Z"
             },
             {
               "$type": "Document",
@@ -146,8 +119,7 @@
               "RelativeToolTip": "Models\\Order.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAswB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:38:09.852Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:38:09.852Z"
             },
             {
               "$type": "Document",
@@ -157,40 +129,38 @@
               "RelativeDocumentMoniker": "Models\\Product.cs",
               "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Product.cs",
               "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAA6wCQAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAiwB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-20T17:30:17.467Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Cart.cs",
               "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "Models\\Cart.cs",
               "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Cart.cs",
               "RelativeToolTip": "Models\\Cart.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBgAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAmwBYAAAA+AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:33:25.887Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:33:25.887Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "ShopForHomeDbContext.cs",
               "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Data\\ShopForHomeDbContext.cs",
               "RelativeDocumentMoniker": "Data\\ShopForHomeDbContext.cs",
               "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Data\\ShopForHomeDbContext.cs",
               "RelativeToolTip": "Data\\ShopForHomeDbContext.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAB0AAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAGAAAAAAAAAAAAAmwHUAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:06:03.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:06:03.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "User.cs",
               "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\User.cs",
               "RelativeDocumentMoniker": "Models\\User.cs",
@@ -198,12 +168,72 @@
               "RelativeToolTip": "Models\\User.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAA7wB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:19:36.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:19:36.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:01:13.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CartItem.cs",
+              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\CartItem.cs",
+              "RelativeDocumentMoniker": "Models\\CartItem.cs",
+              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\CartItem.cs",
+              "RelativeToolTip": "Models\\CartItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAqwBkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:34:40.46Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "DiscountCoupon.cs",
+              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\DiscountCoupon.cs",
+              "RelativeDocumentMoniker": "Models\\DiscountCoupon.cs",
+              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\DiscountCoupon.cs",
+              "RelativeToolTip": "Models\\DiscountCoupon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:36:07.991Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "SalesReport.cs",
+              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\SalesReport.cs",
+              "RelativeDocumentMoniker": "Models\\SalesReport.cs",
+              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\SalesReport.cs",
+              "RelativeToolTip": "Models\\SalesReport.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T17:48:15.197Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20250220184320_InitialMigration.cs",
+              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Migrations\\20250220184320_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250220184320_InitialMigration.cs",
+              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Migrations\\20250220184320_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20250220184320_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T18:43:20.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\appsettings.json",
               "RelativeDocumentMoniker": "appsettings.json",
@@ -211,12 +241,11 @@
               "RelativeToolTip": "appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-20T06:46:47.464Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T06:46:47.464Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -224,34 +253,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:08:27.182Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CartItem.cs",
-              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\CartItem.cs",
-              "RelativeDocumentMoniker": "Models\\CartItem.cs",
-              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\CartItem.cs",
-              "RelativeToolTip": "Models\\CartItem.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T18:34:40.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DiscountCoupon.cs",
-              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\DiscountCoupon.cs",
-              "RelativeDocumentMoniker": "Models\\DiscountCoupon.cs",
-              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\DiscountCoupon.cs",
-              "RelativeToolTip": "Models\\DiscountCoupon.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:36:07.991Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T18:08:27.182Z"
             },
             {
               "$type": "Document",
@@ -263,21 +265,7 @@
               "RelativeToolTip": "Models\\Role.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:19:09.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Category.cs",
-              "DocumentMoniker": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Category.cs",
-              "RelativeDocumentMoniker": "Models\\Category.cs",
-              "ToolTip": "D:\\Capstone Project\\ShopForHomeCApstoneApi\\Models\\Category.cs",
-              "RelativeToolTip": "Models\\Category.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:01:13.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:19:09.258Z"
             },
             {
               "$type": "Document",
@@ -289,8 +277,7 @@
               "RelativeToolTip": "Models\\UserCoupon.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAwwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:37:30.091Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:37:30.091Z"
             },
             {
               "$type": "Document",
@@ -302,8 +289,7 @@
               "RelativeToolTip": "Models\\Wishlist.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T17:55:48.11Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T17:55:48.11Z"
             },
             {
               "$type": "Document",

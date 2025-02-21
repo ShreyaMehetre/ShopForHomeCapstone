@@ -33,7 +33,7 @@ public partial class Product
 
     public virtual ICollection<Cart> Carts { get; set; } = new List<Cart>();
 
-    public virtual Category Category { get; set; } = null!;
+    public virtual Category? Category { get; set; } = null!;
 
     public virtual ICollection<CartItem> CartItems { get; set; } = new List<CartItem>();
 }
