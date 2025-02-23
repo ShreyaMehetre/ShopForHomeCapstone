@@ -32,4 +32,8 @@ export class AppComponent implements OnInit {
   logout() {
     this.authService.logout(); // Calls the logout function in AuthService
   }
+
+  navigateToCart(): void {
+    this.router.navigate(['/cart']);
+}
 }

@@ -16,24 +16,27 @@ export class CartService {
 
   private getHeaders(): HttpHeaders {
     const token = localStorage.getItem('token');
+    console.log("Auth Token:", token); // Debugging log
     return new HttpHeaders({
-      'Content-Type': 'application/json',
-      'Authorization': `Bearer ${token}`
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${token}`
     });
-  }
+}
 
   // Fetch cart items and update count
   getCartItems(): Observable<any> {
     return this.http.get(`${this.apiUrl}`, { headers: this.getHeaders() }).pipe(
-      tap((cartItems: any) => {
-        if (Array.isArray(cartItems)) {
-          this.cartCount.next(cartItems.length);
-        } else {
-          this.cartCount.next(0); // Fallback if response is not an array
-        }
-      })
+        tap((cartItems: any) => {
+            console.log("Cart API Response:", cartItems); // Debugging log
+            if (!Array.isArray(cartItems)) {
+                console.error("Unexpected cart response format:", cartItems);
+                cartItems = [];
+            }
+            this.cartCount.next(cartItems.length);
+        })
     );
-  }
+}
+
 
   addToCart(productId: number, quantity: number): Observable<any> {
     return this.http.post(`${this.apiUrl}/add`, { productId, productQuantity: quantity }, { headers: this.getHeaders() })
@@ -62,6 +65,13 @@ export class CartService {
 
   // Refresh cart count after any action
   updateCartCount(): void {
-    this.getCartItems().subscribe();
-  }
+    this.getCartItems().subscribe({
+        next: (cartItems) => {
+            this.cartCount.next(cartItems.length);
+        },
+        error: () => {
+            this.cartCount.next(0); // Reset if there's an error
+        }
+    });
+}
 }
