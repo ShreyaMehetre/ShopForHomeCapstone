@@ -17,40 +17,16 @@ export class AppComponent implements OnInit {
   wishlistCount: number = 0;
   title = 'ShopForHome';
 
-  isUser = false;
-  isAdmin: boolean = false;
-  isLogin = false;
+  isLoggedIn = false;
 
-  constructor(
-    private router: Router, 
-    private cartService: CartService, 
-    private authService: AuthService, 
-    private wishlistService: WishlistService
-  ) {}
+  constructor(private router: Router, private cartService: CartService, private authService: AuthService, private wishlistService: WishlistService, ) {}
 
   ngOnInit(): void {
-    const userRole = localStorage.getItem('roleId');
-    
-    // Check if the user is logged in
-    this.isLogin = !!userRole; 
-
-    if (userRole === '2') {
-      this.isAdmin = true;
-      this.isUser = false;
-    } else {
-      this.isUser = true;
-      this.isAdmin = false;
-    }
-
-    // Subscribe to authentication status
     this.authService.isLoggedIn$.subscribe(status => {
-      this.isLogin = status;
-      this.isUser = !this.isAdmin && status; 
+      this.isLoggedIn = status;
 
       if (status) {
         const userId = this.authService.getUserId();
-
-        // Subscribe to cart and wishlist counts
         this.cartService.cartCount$.subscribe(count => {
           this.cartCount = count;
         });
@@ -66,16 +42,13 @@ export class AppComponent implements OnInit {
 
   logout() {
     this.authService.logout(); // Calls the logout function in AuthService
-    this.isLogin = false;
-    this.isUser = false;
-    this.isAdmin = false;
   }
 
   navigateToCart(): void {
     this.router.navigate(['/cart']);
-  }
+}
 
-  navigateToWishlist(): void {
-    this.router.navigate(['/wishlist']);
-  }
+navigateToWishlist(): void {
+  this.router.navigate(['/wishlist']);
+}
 }

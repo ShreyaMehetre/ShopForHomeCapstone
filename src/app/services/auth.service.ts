@@ -36,14 +36,15 @@ export class AuthService {
   // Logout
   logout(): void {
     localStorage.removeItem('token');
-    localStorage.removeItem('role');
+    localStorage.removeItem('roleId');
+    localStorage.removeItem('userId');
     this.loggedIn.next(false); // Notify all subscribers that user is logged out
   }
 
   // Store user session
   private setSession(token: string, roleId: string): void {
     localStorage.setItem('token', token);
-    localStorage.setItem('role', roleId);
+    localStorage.setItem('roleId', roleId);
     this.loggedIn.next(true); // Notify all subscribers that user is logged in
   }
 

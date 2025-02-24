@@ -16,6 +16,7 @@ import { ProductDeleteComponent } from './admin-functionalities/product-crud/pro
 import { ProductCreateComponent } from './admin-functionalities/product-crud/product-create/product-create.component';
 import { CategoryCreateComponent } from './admin-functionalities/category-crud/category-create/category-create.component';
 import { CategoryDeleteComponent } from './admin-functionalities/category-crud/category-delete/category-delete.component';
+import { AppComponent } from './app.component';
 
 export const routes: Routes = [
   { path: '', component: ProductListComponent },
@@ -32,6 +33,7 @@ export const routes: Routes = [
   { path: 'add-product', component: ProductCreateComponent },
   { path: 'add-category', component: CategoryCreateComponent },
   { path: 'delete-category/:id', component: CategoryDeleteComponent },
+  {path: 'app', component: AppComponent},
 
   {
     path: '',
