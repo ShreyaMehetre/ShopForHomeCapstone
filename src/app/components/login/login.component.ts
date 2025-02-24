@@ -33,7 +33,7 @@ export class LoginComponent {
         localStorage.setItem('userId', this.userModel.userId);
         alert('Login Successfull');
         if (this.userModel.roleId == 1) {
-          this.router.navigate(['/admin']);
+          this.router.navigate(['/Admin']);
         } else {
           this.router.navigate(['/products']);
         }

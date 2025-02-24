@@ -12,12 +12,12 @@
 <body>
 
 <!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top shadow">
+<nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top shadow">
     <div class="container-fluid">
         <a class="navbar-brand fw-bold text-white" href="#">
             <img src="logo.jpg" style="height: 40px; margin-right: 10px;">
             ShopForHome
-          </a>
+        </a>
         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white"></span>
@@ -29,7 +29,8 @@
                         <i class="fas fa-home"></i> Home
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isLoggedIn">
+                <!-- Wishlist (Only for Users) -->
+                <li class="nav-item" *ngIf="isUser">
                     <a routerLink="/wishlist" class="btn bootstrap-icons position-relative" (click)="navigateToWishlist()">
                         ❤️ Wishlist 
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
@@ -37,7 +38,8 @@
                         </span>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isLoggedIn">
+                <!-- Cart (Only for Users) -->
+                <li class="nav-item" *ngIf="isUser">
                     <a routerLink="/cart" class="btn bootstrap-icons position-relative" (click)="navigateToCart()">
                         🛒 Cart
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
@@ -45,17 +47,19 @@
                         </span>
                     </a>
                 </li>            
-                <li class="nav-item" *ngIf="!isLoggedIn">
+                <!-- Show Login & Register only if not logged in -->
+                <li class="nav-item" *ngIf="!isLogin">
                     <a class="nav-link text-white" href="/login">
                         <i class="fas fa-sign-in-alt"></i> Login
                     </a>
                 </li>
-                <li class="nav-item"*ngIf="!isLoggedIn">
+                <li class="nav-item" *ngIf="!isLogin">
                     <a class="nav-link text-white" href="/register">
                         <i class="fas fa-user-plus"></i> Register
                     </a>
                 </li>
-                <li class="nav-item dropdown" *ngIf="!isLoggedIn">
+                <!-- Categories Dropdown (Only for Logged-in Users) -->
+                <li class="nav-item dropdown" *ngIf="isLogin">
                     <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
                         data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="fas fa-th"></i> Categories
@@ -68,7 +72,7 @@
                     </ul>
                 </li>
                 <!-- Show Logout if logged in -->
-                <li class="nav-item" *ngIf="isLoggedIn">
+                <li class="nav-item" *ngIf="isLogin">
                     <a class="nav-link text-white" (click)="logout()" href="./index.html">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
@@ -77,6 +81,7 @@
         </div>
     </div>
 </nav>
+<br><br><br>
 
 <footer class="text-center text-white bg-dark py-3 fixed-bottom">
     <div>
