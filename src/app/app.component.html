@@ -14,7 +14,10 @@
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-light bg-primary sticky-top shadow">
     <div class="container-fluid">
-        <a class="navbar-brand fw-bold text-white">ShopForHome</a>
+        <a class="navbar-brand fw-bold text-white" href="#">
+            <img src="logo.jpg" style="height: 40px; margin-right: 10px;">
+            ShopForHome
+          </a>
         <button class="navbar-toggler border-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon text-white"></span>
@@ -26,11 +29,22 @@
                         <i class="fas fa-home"></i> Home
                     </a>
                 </li>
-                <li *ngIf="isLoggedIn">
-                    <a routerLink="/cart" class="btn bootstrap-icons" (click)="navigateToCart()">
-                        🛒 Cart <span class="badge badge-warning">{{ cartCount }}</span>
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a routerLink="/wishlist" class="btn bootstrap-icons position-relative" (click)="navigateToWishlist()">
+                        ❤️ Wishlist 
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            {{ wishlistCount }}
+                        </span>
                     </a>
-                </li>                
+                </li>
+                <li class="nav-item" *ngIf="isLoggedIn">
+                    <a routerLink="/cart" class="btn bootstrap-icons position-relative" (click)="navigateToCart()">
+                        🛒 Cart
+                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
+                            {{ cartCount }}
+                        </span>
+                    </a>
+                </li>            
                 <li class="nav-item" *ngIf="!isLoggedIn">
                     <a class="nav-link text-white" href="/login">
                         <i class="fas fa-sign-in-alt"></i> Login
@@ -67,7 +81,7 @@
 <footer class="text-center text-white bg-dark py-3 fixed-bottom">
     <div>
         © 2025 Copyright:
-        <a class="text-reset fw-bold" href="#">ShopForHome</a>
+        <a class="text-reset fw-bold" href="./index.html">ShopForHome(Abhishek, Somdev, Nikhil, Navitha, Shreya, Prateek)</a>
     </div>
 </footer>
 

@@ -25,7 +25,7 @@ export class CartService {
 
   // Fetch cart items and update count
   getCartItems(): Observable<any> {
-    return this.http.get(`${this.apiUrl}`, { headers: this.getHeaders() }).pipe(
+    return this.http.get(`${this.apiUrl}/GetCartItems`, { headers: this.getHeaders() }).pipe(
         tap((cartItems: any) => {
             console.log("Cart API Response:", cartItems); // Debugging log
             if (!Array.isArray(cartItems)) {
@@ -39,27 +39,27 @@ export class CartService {
 
 
   addToCart(productId: number, quantity: number): Observable<any> {
-    return this.http.post(`${this.apiUrl}/add`, { productId, productQuantity: quantity }, { headers: this.getHeaders() })
+    return this.http.post(`${this.apiUrl}/AddToCart`, { productId, productQuantity: quantity }, { headers: this.getHeaders() })
       .pipe(tap(() => this.updateCartCount())); // Refresh cart count
   }
 
   increaseQuantity(cartId: number): Observable<any> {
-    return this.http.put(`${this.apiUrl}/increase/${cartId}`, {}, { headers: this.getHeaders() })
+    return this.http.put(`${this.apiUrl}/increaseQuantity/${cartId}`, {}, { headers: this.getHeaders() })
       .pipe(tap(() => this.updateCartCount()));
   }
 
   decreaseQuantity(cartId: number): Observable<any> {
-    return this.http.put(`${this.apiUrl}/decrease/${cartId}`, {}, { headers: this.getHeaders() })
+    return this.http.put(`${this.apiUrl}/decreaseQuantity/${cartId}`, {}, { headers: this.getHeaders() })
       .pipe(tap(() => this.updateCartCount()));
   }
 
   removeFromCart(cartId: number): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/remove/${cartId}`, { headers: this.getHeaders() })
+    return this.http.delete(`${this.apiUrl}/RemoveFromCart/${cartId}`, { headers: this.getHeaders() })
       .pipe(tap(() => this.updateCartCount()));
   }
 
   clearCart(): Observable<any> {
-    return this.http.delete(`${this.apiUrl}/clear`, { headers: this.getHeaders() })
+    return this.http.delete(`${this.apiUrl}/clearcart`, { headers: this.getHeaders() })
       .pipe(tap(() => this.cartCount.next(0))); // Set count to 0 when clearing cart
   }
 

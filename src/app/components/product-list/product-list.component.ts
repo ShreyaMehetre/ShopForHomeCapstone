@@ -3,6 +3,8 @@ import { Product, ProductService } from '../../services/product.service';
 import { CartService } from '../../services/cart.service';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { WishlistService, WishlistItem } from '../../services/wishlist.service'; // ✅ Import WishlistItem
+import { AuthService } from '../../services/auth.service';
 
 @Component({
   selector: 'app-product-list',
@@ -14,6 +16,7 @@ import { FormsModule } from '@angular/forms';
 export class ProductListComponent implements OnInit {
   products: Product[] = [];
   filteredProducts: Product[] = [];
+  wishlistItems: number[] = [];
   categories: string[] = ['Furniture', 'Home Décor', 'Lighting'];
   selectedCategory: string = '';
   minPrice: number = 0;
@@ -21,10 +24,16 @@ export class ProductListComponent implements OnInit {
   minRating: number = 0;
   loading: boolean = false; // Loading state
 
-  constructor(private productService: ProductService, private cartService: CartService) {}
+  constructor(
+    private productService: ProductService, 
+    private cartService: CartService, 
+    private wishlistService: WishlistService, 
+    private authService: AuthService
+  ) {}
 
   ngOnInit(): void {
     this.loadProducts();
+    this.loadWishlist();
   }
 
   loadProducts() {
@@ -90,5 +99,62 @@ export class ProductListComponent implements OnInit {
     toast.style.cssText = 'position:fixed; bottom:20px; left:50%; transform:translateX(-50%); background:#333; color:#fff; padding:10px 20px; border-radius:5px; font-size:14px; z-index:1000;';
     document.body.appendChild(toast);
     setTimeout(() => document.body.removeChild(toast), 3000);
+  }
+
+  loadWishlist(): void {
+    const userId = localStorage.getItem('userId');
+    if (!userId) {
+      console.error('User ID not found');
+      return;
+    }
+  
+    this.wishlistService.getWishlist(Number(userId)).subscribe({
+      next: (items: WishlistItem[]) => {
+        this.wishlistItems = items.map(item => item.productId);
+      },
+      error: () => {
+        this.wishlistItems = [];
+      }
+    });
+  }
+  
+
+  toggleWishlist(productId: number): void {
+    const userId = localStorage.getItem('userId');
+
+    
+    if (!userId) {
+      this.showToast('⚠️ Please log in to use the wishlist.');
+      return;
+    }
+  
+    if (this.isInWishlist(productId)) {
+      this.wishlistService.removeFromWishlist(productId, Number(userId)).subscribe({
+        next: () => {
+          this.wishlistItems = this.wishlistItems.filter(id => id !== productId);
+          this.wishlistService.refreshWishlistCount(Number(userId)); // ✅ Update count
+          this.showToast('❌ Removed from Wishlist.');
+        },
+        error: () => {
+          this.showToast('❌ Failed to remove from Wishlist.');
+        }
+      });
+    } else {
+      this.wishlistService.addToWishlist(productId, Number(userId)).subscribe({
+        next: () => {
+          this.wishlistItems.push(productId);
+          this.wishlistService.refreshWishlistCount(Number(userId)); // ✅ Update count
+          this.showToast('❤️ Added to Wishlist!');
+        },
+        error: () => {
+          this.showToast('❌ Failed to add to Wishlist.');
+        }
+      });
+    }
+  } 
+   
+
+  isInWishlist(productId: number): boolean {
+    return this.wishlistItems.includes(productId);
   }
 }

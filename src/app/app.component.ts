@@ -4,6 +4,7 @@ import { Router } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { CartService } from './services/cart.service';
 import { AuthService } from './services/auth.service';
+import { WishlistService } from './services/wishlist.service';
 
 @Component({
   selector: 'app-root',
@@ -13,19 +14,29 @@ import { AuthService } from './services/auth.service';
 })
 export class AppComponent implements OnInit {
   cartCount: number = 0;
+  wishlistCount: number = 0;
   title = 'ShopForHome';
 
   isLoggedIn = false;
 
-  constructor(private router: Router, private cartService: CartService, private authService: AuthService) {}
+  constructor(private router: Router, private cartService: CartService, private authService: AuthService, private wishlistService: WishlistService, ) {}
 
   ngOnInit(): void {
     this.authService.isLoggedIn$.subscribe(status => {
-      this.isLoggedIn = status; // Updates automatically on login/logout
-    });
-    
-    this.cartService.cartCount$.subscribe(count => {
-      this.cartCount = count;
+      this.isLoggedIn = status;
+
+      if (status) {
+        const userId = this.authService.getUserId();
+        this.cartService.cartCount$.subscribe(count => {
+          this.cartCount = count;
+        });
+
+        this.wishlistService.wishlistCount$.subscribe(count => {
+          this.wishlistCount = count;
+        });
+
+        this.wishlistService.refreshWishlistCount(userId);
+      }
     });
   }
 
@@ -35,5 +46,9 @@ export class AppComponent implements OnInit {
 
   navigateToCart(): void {
     this.router.navigate(['/cart']);
+}
+
+navigateToWishlist(): void {
+  this.router.navigate(['/wishlist']);
 }
 }

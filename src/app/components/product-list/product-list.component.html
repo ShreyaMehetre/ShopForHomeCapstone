@@ -12,6 +12,9 @@
           <p class="fw-bold text-success">Price: ${{ product.price }}</p>
           <p class="text-warning">⭐ {{ product.rating }}</p>
           <button class="btn btn-primary w-100" (click)="addToCart(product.productId)">Add to Cart</button>
+          <br>
+          <br>
+          <button class="btn btn-primary w-100" (click)="toggleWishlist(product.productId)">Add to Wishlist</button>                   
         </div>
       </div>
     </div>

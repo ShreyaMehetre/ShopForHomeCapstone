@@ -8,6 +8,7 @@ import { RoleGuard } from './role.guard';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { WishlistComponent } from './components/wishlist/wishlist.component';
 
 export const routes: Routes = [
     {path: '', component: ProductListComponent},
@@ -16,6 +17,7 @@ export const routes: Routes = [
     {path: 'cart', component: CartComponent},
     {path: 'login', component: LoginComponent},
     {path: 'register', component: RegisterComponent},
+    {path: 'wishlist', component:WishlistComponent},
     {
         path: '', 
         redirectTo: 'LoginAndSignUp', 
