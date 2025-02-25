@@ -1,41 +1,71 @@
 import { Component } from '@angular/core';
 import { ProductService } from '../../../services/product/product.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { HttpErrorResponse } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-product-details',
-  imports: [CommonModule],
+  imports : [RouterLink, CommonModule],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'
 })
 export class ProductDetailsComponent {
-   products: any[] = [];
-  
-    constructor(private productService: ProductService, private router: Router) {}
-  
-    ngOnInit() {
-      this.loadProducts();
+  products: any[] = [];
+  selectedFile: File | null = null;
+
+  constructor(private productService: ProductService, private router: Router) {}
+
+  ngOnInit() {
+    this.loadProducts();
+  }
+
+  // Fetch all products
+  loadProducts(): void {
+    this.productService.getAllProducts().subscribe(data => {
+      this.products = data;
+    });
+  }
+
+  // Handle file selection
+  onFileSelected(event: any): void {
+    if (event.target.files.length > 0) {
+      this.selectedFile = event.target.files[0];
     }
-  
-    // Fetch all users
-    loadProducts() :void {
-      this.productService.getAllProducts().subscribe(data => {
-        this.products = data;
-      });
-    }
-  
-    // Navigate to update user page
-    updateProduct(productId: number) {
-      this.router.navigate([`/update-product`, productId]);
-    }
-  
-    // Navigate to delete user page
-    deleteProduct(productId: number) {
-      this.router.navigate([`/delete-product`,productId]);
+  }
+
+  // Upload CSV file
+  uploadCSV(): void {
+    if (!this.selectedFile) {
+      alert("Please select a CSV file to upload.");
+      return;
     }
 
-    addProduct():void{
-      this.router.navigate([`/add-product`])
-    }
+    const formData = new FormData();
+    formData.append('file', this.selectedFile);
+
+    this.productService.uploadProductsCSV(formData).subscribe(
+      (response) => {
+        alert("CSV uploaded successfully!");
+        this.loadProducts(); // Refresh product list after upload
+      },
+      (error: HttpErrorResponse) => {
+        alert("Error uploading CSV file: " + error.message);
+      }
+    );
+  }
+
+  // Navigate to update product page
+  updateProduct(productId: number) {
+    this.router.navigate([`/update-product`, productId]);
+  }
+
+  // Navigate to delete product page
+  deleteProduct(productId: number) {
+    this.router.navigate([`/delete-product`, productId]);
+  }
+
+  addProduct(): void {
+    this.router.navigate([`/add-product`]);
+  }
 }

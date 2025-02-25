@@ -46,4 +46,10 @@ export class ProductService {
     const headers = new HttpHeaders({ 'Authorization':`Bearer ${accessToken}` });
     return this.http.get<any>(`https://localhost:7246/api/category/GetAllCategories`, {headers});
    }
+
+   uploadProductsCSV(fileData: FormData): Observable<any> {
+    const accessToken =  localStorage.getItem("token");
+     const headers = new HttpHeaders({ 'Authorization':`Bearer ${accessToken}` });
+    return this.http.post(`${this.apiUrl}/BulkUpload`, fileData, {headers});
+  }
 }

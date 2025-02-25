@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../../services/user/user.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-user-details',
-  imports: [CommonModule],
+  imports: [CommonModule , RouterLink],
   templateUrl: './user-details.component.html',
   styleUrl: './user-details.component.css'
 })

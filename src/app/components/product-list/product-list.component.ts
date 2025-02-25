@@ -61,7 +61,7 @@ export class ProductListComponent implements OnInit {
   addToCart(productId: number, quantity: number = 1) {
     const token = localStorage.getItem('token');
     if (!token) {
-      this.showToast('⚠️ Please log in to add items to your cart.');
+      alert('⚠️ Please log in to add items to your cart.');
       return;
     }
   
@@ -110,7 +110,7 @@ export class ProductListComponent implements OnInit {
   
     this.wishlistService.getWishlist(Number(userId)).subscribe({
       next: (items: WishlistItem[]) => {
-        this.wishlistItems = items.map(item => item.productId);
+        this.wishlistItems = items.map(item => item.product.productId);
       },
       error: () => {
         this.wishlistItems = [];
@@ -124,7 +124,7 @@ export class ProductListComponent implements OnInit {
 
     
     if (!userId) {
-      this.showToast('⚠️ Please log in to use the wishlist.');
+      alert('⚠️ Please log in to use the wishlist.');
       return;
     }
   

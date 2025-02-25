@@ -25,20 +25,20 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                    <a class="nav-link text-white" href="./index.html">
+                    <a class="nav-link text-white" [routerLink]="'/products'">
                         <i class="fas fa-home"></i> Home
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isLoggedIn">
-                    <a routerLink="/wishlist" class="btn bootstrap-icons position-relative" (click)="navigateToWishlist()">
+                <li class="nav-item" *ngIf="isLoggedIn && !isAdmin">
+                    <a [routerLink]="'/wishlist'" class="btn bootstrap-icons position-relative" (click)="navigateToWishlist()">
                         ❤️ Wishlist 
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                             {{ wishlistCount }}
                         </span>
                     </a>
                 </li>
-                <li class="nav-item" *ngIf="isLoggedIn">
-                    <a routerLink="/cart" class="btn bootstrap-icons position-relative" (click)="navigateToCart()">
+                <li class="nav-item" *ngIf="isLoggedIn && !isAdmin">
+                    <a [routerLink]="'/cart'" class="btn bootstrap-icons position-relative" (click)="navigateToCart()">
                         🛒 Cart
                         <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning">
                             {{ cartCount }}
@@ -46,12 +46,12 @@
                     </a>
                 </li>            
                 <li class="nav-item" *ngIf="!isLoggedIn">
-                    <a class="nav-link text-white" href="/login">
+                    <a class="nav-link text-white" [routerLink]="'/login'">
                         <i class="fas fa-sign-in-alt"></i> Login
                     </a>
                 </li>
                 <li class="nav-item"*ngIf="!isLoggedIn">
-                    <a class="nav-link text-white" href="/register">
+                    <a class="nav-link text-white" [routerLink]="'/register'">
                         <i class="fas fa-user-plus"></i> Register
                     </a>
                 </li>
@@ -69,7 +69,7 @@
                 </li>
                 <!-- Show Logout if logged in -->
                 <li class="nav-item" *ngIf="isLoggedIn">
-                    <a class="nav-link text-white" (click)="logout()" href="./index.html">
+                    <a class="nav-link text-white" (click)="logout()" [routerLink]="'/products'">
                         <i class="fas fa-sign-out-alt"></i> Logout
                     </a>
                 </li>
@@ -83,7 +83,7 @@
 <footer class="text-center text-white bg-dark py-3 fixed-bottom">
     <div>
         © 2025 Copyright:
-        <a class="text-reset fw-bold" href="./index.html">ShopForHome(Abhishek, Somdev, Nikhil, Navitha, Shreya, Prateek)</a>
+        <a class="text-reset fw-bold" href="./index.html">ShopForHome(ABHISHEK)</a>
     </div>
 </footer>
 

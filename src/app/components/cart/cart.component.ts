@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { CartService } from '../../services/cart.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-cart',
@@ -13,7 +14,7 @@ export class CartComponent implements OnInit {
   cartItems: any[] = [];
   loading: boolean = false;
 
-  constructor(private cartService: CartService, private snackBar: MatSnackBar) {}
+  constructor(private cartService: CartService, private snackBar: MatSnackBar, private router:Router) {}
 
   ngOnInit(): void {
     console.log("Cart Component Loaded!");
@@ -82,5 +83,9 @@ export class CartComponent implements OnInit {
 
   showMessage(message: string): void {
     this.snackBar.open(message, 'Close', { duration: 3000 });
+  }
+
+  proceedToCheckout(): void {
+    this.router.navigate(['/checkout']);
   }
 }

@@ -16,6 +16,11 @@ import { ProductDeleteComponent } from './admin-functionalities/product-crud/pro
 import { ProductCreateComponent } from './admin-functionalities/product-crud/product-create/product-create.component';
 import { CategoryCreateComponent } from './admin-functionalities/category-crud/category-create/category-create.component';
 import { CategoryDeleteComponent } from './admin-functionalities/category-crud/category-delete/category-delete.component';
+import { OrderComponent } from './components/order/order.component';
+import { CheckoutComponent } from './components/checkout/checkout.component';
+import { UserDetailsComponent } from './admin-functionalities/user-crud/user-details/user-details.component';
+import { CategoryDetailsComponent } from './admin-functionalities/category-crud/category-details/category-details.component';
+import { ProductDetailsComponent } from './admin-functionalities/product-crud/product-details/product-details.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
@@ -33,8 +38,12 @@ export const routes: Routes = [
   { path: 'add-product', component: ProductCreateComponent },
   { path: 'add-category', component: CategoryCreateComponent },
   { path: 'delete-category/:id', component: CategoryDeleteComponent },
+  { path: 'checkout', component: CheckoutComponent },
+  { path: 'order', component: OrderComponent },
+  {path: 'admin/users', component: UserDetailsComponent},
+  {path: 'admin/categories', component: CategoryDetailsComponent},
+  {path: 'admin/products', component: ProductDetailsComponent},
   {path: 'app', component: AppComponent},
-
   {
     path: '',
     redirectTo: 'LoginAndSignUp',
