@@ -21,6 +21,12 @@ import { CheckoutComponent } from './components/checkout/checkout.component';
 import { UserDetailsComponent } from './admin-functionalities/user-crud/user-details/user-details.component';
 import { CategoryDetailsComponent } from './admin-functionalities/category-crud/category-details/category-details.component';
 import { ProductDetailsComponent } from './admin-functionalities/product-crud/product-details/product-details.component';
+import { CouponAssignComponent } from './admin-functionalities/coupons-crud/coupon-assign/coupon-assign.component';
+import { CouponCreateComponent } from './admin-functionalities/coupons-crud/coupon-create/coupon-create.component';
+import { CouponDetailsComponent } from './admin-functionalities/coupons-crud/coupon-details/coupon-details.component';
+import { CouponDeactivateComponent } from './admin-functionalities/coupons-crud/coupon-deactivate/coupon-deactivate.component';
+import { CouponDeleteComponent } from './admin-functionalities/coupons-crud/coupon-delete/coupon-delete.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
@@ -40,10 +46,16 @@ export const routes: Routes = [
   { path: 'delete-category/:id', component: CategoryDeleteComponent },
   { path: 'checkout', component: CheckoutComponent },
   { path: 'order', component: OrderComponent },
-  {path: 'admin/users', component: UserDetailsComponent},
-  {path: 'admin/categories', component: CategoryDetailsComponent},
-  {path: 'admin/products', component: ProductDetailsComponent},
-  {path: 'app', component: AppComponent},
+  { path: 'admin/users', component: UserDetailsComponent },
+  { path: 'admin/categories', component: CategoryDetailsComponent },
+  { path: 'admin/products', component: ProductDetailsComponent },
+  { path: 'app', component: AppComponent },
+  { path: 'Admin/coupons', component: CouponDetailsComponent },
+  { path: 'coupons-create', component: CouponCreateComponent },
+  { path: 'coupons-assign/:id', component: CouponAssignComponent },
+  { path: 'coupons-deactivate/:id', component: CouponDeactivateComponent },
+  { path: 'coupons-delete/:id', component: CouponDeleteComponent },
+  { path: 'notifications', component: NotificationsComponent },
   {
     path: '',
     redirectTo: 'LoginAndSignUp',

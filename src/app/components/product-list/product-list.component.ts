@@ -5,11 +5,12 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { WishlistService, WishlistItem } from '../../services/wishlist.service'; // ✅ Import WishlistItem
 import { AuthService } from '../../services/auth.service';
+import { SearchComponent } from '../search/search.component';
 
 @Component({
   selector: 'app-product-list',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule,SearchComponent],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css'],
 })
@@ -17,7 +18,7 @@ export class ProductListComponent implements OnInit {
   products: Product[] = [];
   filteredProducts: Product[] = [];
   wishlistItems: number[] = [];
-  categories: string[] = ['Furniture', 'Home Décor', 'Lighting'];
+  categories: string[] = ['Furniture', 'Home Decor', 'Lighting'];
   selectedCategory: string = '';
   minPrice: number = 0;
   maxPrice: number = 10000;

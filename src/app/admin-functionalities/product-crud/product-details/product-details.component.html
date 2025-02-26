@@ -37,8 +37,8 @@
             <button class="btn btn-warning btn-sm me-2" (click)="updateProduct(product.productId)">
               Update
             </button>
-            </td>
-            <td>
+          </td>
+          <td>
             <button class="btn btn-danger btn-sm" (click)="deleteProduct(product.productId)">
               Delete
             </button>
@@ -48,14 +48,15 @@
     </table>
   </div>
   <div class="mb-3">
-    <label for="fileInput" class="btn btn-success">
+    <label for="fileInput" class="btn btn-outline-success mt-4 me-4">
       Upload CSV
       <input type="file" id="fileInput" (change)="onFileSelected($event)" class="d-none" accept=".csv">
     </label>
-    <button class="btn btn-primary ms-2" (click)="uploadCSV()" [disabled]="!selectedFile">Submit</button>
+    <button class="btn btn-outline-primary ms-2 mt-4 me-4" (click)="uploadCSV()" [disabled]="!selectedFile">Submit</button>
+    <button class="btn btn-outline-dark mt-4 text-end me-4" (click)='addProduct()'>Add Product</button>
+    <button class="btn btn-outline-dark mt-4 text-end me-4" [routerLink]="'/Admin'">Back To Admin Dashboard</button>
+
   </div>
-  
-  <button class="btn btn-outline-dark mt-4 text-end me-4" (click) = 'addProduct()'>Add Product</button>
-  <button class="btn btn-outline-dark mt-4 text-end me-4" [routerLink]="'/Admin'">Back To Admin Dashboard</button>
+
   <hr class="mt-4">
 </div>
