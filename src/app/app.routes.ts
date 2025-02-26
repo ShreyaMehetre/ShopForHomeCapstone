@@ -27,6 +27,7 @@ import { CouponDetailsComponent } from './admin-functionalities/coupons-crud/cou
 import { CouponDeactivateComponent } from './admin-functionalities/coupons-crud/coupon-deactivate/coupon-deactivate.component';
 import { CouponDeleteComponent } from './admin-functionalities/coupons-crud/coupon-delete/coupon-delete.component';
 import { NotificationsComponent } from './notifications/notifications.component';
+import { SalesReportDetailsComponent } from './admin-functionalities/sales-report/sales-report-details/sales-report-details.component';
 import { AppComponent } from './app.component';
 
 export const routes: Routes = [
@@ -56,6 +57,7 @@ export const routes: Routes = [
   { path: 'coupons-deactivate/:id', component: CouponDeactivateComponent },
   { path: 'coupons-delete/:id', component: CouponDeleteComponent },
   { path: 'notifications', component: NotificationsComponent },
+  {path: 'Admin/sale-report', component: SalesReportDetailsComponent},
   {
     path: '',
     redirectTo: 'LoginAndSignUp',

@@ -32,28 +32,28 @@ export class AppComponent implements OnInit, AfterViewChecked {
   ) { }
   
   ngAfterViewChecked(): void {
-    this.checkUserRole();
-    this.authService.isLoggedIn$.subscribe(status => {
-      this.isLoggedIn = status;
-      this.checkUserRole();
+    // this.checkUserRole();
+    // this.authService.isLoggedIn$.subscribe(status => {
+    //   this.isLoggedIn = status;
+    //   this.checkUserRole();
 
-      if (status) {
-        const userId = this.authService.getUserId();
+    //   if (status) {
+    //     const userId = this.authService.getUserId();
         
-        this.cartService.cartCount$.subscribe(count => {
-          this.cartCount = count;
-        });
+    //     this.cartService.cartCount$.subscribe(count => {
+    //       this.cartCount = count;
+    //     });
 
-        this.wishlistService.wishlistCount$.subscribe(count => {
-          this.wishlistCount = count;
-        });
+    //     this.wishlistService.wishlistCount$.subscribe(count => {
+    //       this.wishlistCount = count;
+    //     });
 
-        this.wishlistService.refreshWishlistCount(userId);
+    //     this.wishlistService.refreshWishlistCount(userId);
 
-        // Fetch notification count
-        this.fetchNotificationCount();
-      }
-    });
+    //     // Fetch notification count
+    //     this.fetchNotificationCount();
+    //   }
+    // });
   }
 
   ngOnInit(): void {
